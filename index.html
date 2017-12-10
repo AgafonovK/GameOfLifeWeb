@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="cs.css">
+
+</head>
+<body>
+
+<section id="page">
+    <header>
+        <div>
+            Game of Life
+        </div>
+
+    </header>
+    <nav>
+        <form name="controlPole">
+            <input type="text" id="input_form" onchange="myvar = this.value" placeholder="Введите кол-во клеток"/>
+            <input class="buttonStart" type="button" onclick="calc()" value="Start">
+            <button class="buttonStop" type="button">Stop</button>
+            <button class="buttonReset" type="button" onclick="resetPole()">Reset</button>
+        </form>
+    </nav>
+    <main>
+        <canvas id="c1" style = background-color:black style="border: 3px solid black"></canvas>
+    </main>
+    <footer>
+        2017(c)
+    </footer>
+</section>
+
+<script src="MyScript.js"></script>
+</body>
+</html>
